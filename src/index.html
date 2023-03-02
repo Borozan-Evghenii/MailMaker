@@ -4,10 +4,86 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.scss" />
-    <title>Document</title>
+    <title>MailMaker</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-wrapper">
+          <div class="logo">
+            <a href="/">MailMaker</a>
+          </div>
+          <nav class="nav">
+            <ul>
+              <li><a class="link" href="/">Solution</a></li>
+              <li><a class="link" href="/">Features</a></li>
+              <li><a class="link" href="/">Pricing</a></li>
+              <li><a class="link" href="/">Support</a></li>
+            </ul>
+          </nav>
+          <div class="button-group">
+            <a href="" class="button">log in</a>
+            <a href="" class="button--small"> <span>single up</span> </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <header class="mobile-header header">
+      <div class="container">
+        <div class="mobile-header-wrapper">
+          <div class="logo">
+            <a href="/">MailMaker</a>
+          </div>
+          <div class="burger">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+          </div>
+        </div>
+      </div>
+      <nav class="mobile-header-menu">
+        <ul>
+          <li><a href="/">solution</a></li>
+          <li><a href="/">features</a></li>
+          <li><a href="/">pricing</a></li>
+          <li><a href="/">support</a></li>
+        </ul>
+        <div class="button-group">
+          <a href="" class="button">log in</a>
+          <a href="" class="button--small"> <span>single up</span> </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="section hero">
+        <div class="container">
+          <div class="section-wrapper">
+            <div class="content-group">
+              <h1 class="h1 content-heading">
+                SMS Marketing and <span class="accent">Email Marketing</span>
+                Made Easy.
+              </h1>
+              <p class="heading-descr">
+                You can get started with your marketing automation in a few
+                minutes
+              </p>
+            </div>
+            <form>
+              <input type="text" placeholder="Enter email" />
+              <button class="button--fill">Let’s Talk</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
   <!-- Connect ion-iconic -->
   <script
     type="module"
