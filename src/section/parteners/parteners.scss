@@ -1,0 +1,17 @@
+.parteners {
+  padding: 80px 0;
+  border-top: 1px solid var(--gray-darklight);
+  border-bottom: 1px solid var(--gray-darklight);
+
+  &__list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 80px;
+    justify-content: center;
+    @media screen and (max-width: 1224px) {
+      gap: 40px;
+    }
+  }
+}

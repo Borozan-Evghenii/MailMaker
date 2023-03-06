@@ -1,0 +1,35 @@
+.hero {
+  background-color: var(--gray-light);
+  &__container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+  }
+  &__heading-group {
+    margin-top: calc(var(--header-offset) * 2);
+    align-items: center;
+    max-width: 734px;
+    text-align: center;
+  }
+  &__title {
+    font-size: 64px;
+    text-align: center;
+    font-weight: 700;
+    @media screen and (max-width: 426px) {
+      font-size: 48px;
+    }
+  }
+  &__dashboard {
+    border: 6px solid var(--dark);
+    border-radius: 12px;
+    max-width: 864px;
+    max-height: 520px;
+    overflow: hidden;
+    background-color: var(--gray-light);
+    img {
+      width: 100%;
+    }
+  }
+}
