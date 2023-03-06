@@ -20,6 +20,9 @@
   "homepage": "https://github.com/Borozan-Evghenii/Template#readme",
   "devDependencies": {
     "parcel-bundler": "^1.12.5",
+    "posthtml": "^0.16.6",
+    "posthtml-doctype": "^1.1.1",
+    "posthtml-include": "^1.7.4",
     "sass": "^1.58.3"
   },
   "dependencies": {
