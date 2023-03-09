@@ -13,7 +13,7 @@
   --font-family: "Space Grotesk";
   --content-width: 1300px;
   --container-offset: 20px;
-  --container: calc(var(--content-width)+ (var(--container-offset) * 2));
+  --container: calc(var(--content-width) + (var(--container-offset) * 2));
   --header-offset: 99px;
   --light-blue: #e9f2ff;
   --blue: #1877f3;
@@ -262,6 +262,11 @@
 .grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 100px;
+  }
 }
 
 @import url("./section/header/header.scss");
@@ -269,3 +274,7 @@
 @import url("./section/parteners/parteners.scss");
 @import url("./section/solution/solution.scss");
 @import url("./section/compliant/compliant.scss");
+@import url("./section/tools/tools.scss");
+@import url("./section/conversation/conversation.scss");
+@import url("./section/auto/auto.scss");
+@import url("./section/testimonial/testimonial.scss");

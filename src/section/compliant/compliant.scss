@@ -2,27 +2,45 @@
   background-image: url("../../assets/img/compliant-bg.svg");
   background-position: right bottom;
   background-repeat: no-repeat;
+  &__container {
+    padding: 4rem var(--container-offset) !important;
+  }
   &__message {
     position: absolute;
-    top: -50%;
+    top: -40%;
     right: -10%;
     display: flex;
     align-items: center;
+    gap: 10px;
     max-width: 215px;
+    transform: translateY(50%);
     background-color: var(--accent);
     color: var(--white);
     padding: 21px;
-
-
+    &__icon {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 100px;
+      overflow: hidden;
+    }
+    &__text {
+      font-size: 10px;
+      max-width: 123px;
+      line-height: 1.5;
+    }
   }
-
-  
 
   &__col {
     display: flex;
     flex-direction: column;
     gap: 2.2rem;
     align-items: flex-start;
+  }
+  &__col:last-child {
+    align-items: center;
   }
   &__descr {
     max-width: 520px;
@@ -32,6 +50,9 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+    @media screen and (max-width: 425px) {
+      grid-template-columns: 1fr;
+    }
     &__item {
       display: flex;
       gap: 18px;
