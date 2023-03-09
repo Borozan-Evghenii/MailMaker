@@ -13,4 +13,82 @@
     max-width: 612px;
     line-height: 1.5;
   }
+  &__slider-wrapper {
+    position: relative;
+  }
+}
+
+.rewiev-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 62px;
+  align-items: center;
+  background-color: var(--gray-light);
+  padding: 64px 76px;
+  &__heading {
+    font-size: 38px;
+    font-weight: 500;
+    max-width: 341px;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+  &__message {
+    max-width: 436px;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  .user {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    &__info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 5px;
+    }
+    &__icon {
+      width: 46px;
+      height: 46px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      justify-content: center;
+      border-radius: 100px;
+    }
+    &__prof {
+      font-size: 13px;
+    }
+  }
+}
+
+.slider {
+  position: relative;
+  max-width: 1000px;
+  overflow: hidden;
+}
+.slider-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  color: var(--accent);
+  z-index: 5;
+  width: 51px;
+  height: 51px;
+  border-radius: 100px;
+  background-color: rgba(110, 36, 255, 0.2);
+  top: 50%;
+  cursor: pointer;
+}
+.button-prev {
+  left: -10%;
+  transform: translateY(-50%);
+}
+.button-next {
+  right: -10%;
+  transform: translateY(-50%);
 }
