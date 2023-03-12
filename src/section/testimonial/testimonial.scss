@@ -25,6 +25,9 @@
   align-items: center;
   background-color: var(--gray-light);
   padding: 64px 76px;
+  @media screen and (max-width: 1018px) {
+    flex-direction: column;
+  }
   &__heading {
     font-size: 38px;
     font-weight: 500;
@@ -66,7 +69,6 @@
 }
 
 .slider {
-  position: relative;
   max-width: 1000px;
   overflow: hidden;
 }

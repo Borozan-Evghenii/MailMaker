@@ -1,0 +1,54 @@
+.about {
+  padding: 140px 0;
+  background-color: var(--accent);
+  background-image: url("../../assets/img/about-bg.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 0.75fr;
+    gap: 128px;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px !important;
+    color: var(--white);
+    @media screen and (max-width: 900px) {
+      grid-template-columns: 1fr;
+      align-items: center;
+    }
+  }
+  &__text {
+    max-width: 510px;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--white);
+  }
+  &__tezis {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+  &__number-group {
+    display: flex;
+    border-top: 1px solid var(--white);
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+  }
+  .rate__number {
+    font-size: 50px;
+  }
+  .button-fill--white {
+    background-color: var(--white) !important;
+    color: var(--dark);
+    border: var(--white);
+    text-transform: capitalize;
+    &:hover {
+      background-color: var(--dark) !important;
+      color: var(--white);
+      border-color: var(--dark);
+    }
+  }
+}
